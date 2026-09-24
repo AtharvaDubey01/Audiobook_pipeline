@@ -6,7 +6,7 @@ This pipeline has been stripped down to only the essential components and is des
 
 ## 📁 Repository Structure
 - `app.py` - The core generation script.
-- `reference_female.wav` - The voice reference file used to clone the desired voice.
+- `reference.wav` & `reference_female.wav` - The voice reference files used to clone the desired voice (Male and Female options).
 - `Chapters_Text/` - Drop your `.txt` files in here! (e.g., `Chapter 1.txt`, `Chapter 2.txt`)
 - `Chapters_Audio/` - Your finished `.wav` files will appear here.
 
@@ -34,6 +34,7 @@ This pipeline has been stripped down to only the essential components and is des
 - **Smart Resumption:** If generation is interrupted, just run it again! It automatically skips chapters that already exist in `Chapters_Audio/`.
 - **Natural Sorting:** Chapters will be processed in numerical order (e.g. Chapter 2 comes before Chapter 10).
 - **Scene Breaks:** If your text contains `________________`, the model will insert exactly 2 seconds of silence, perfect for scene transitions.
+- **Voice Selection:** You can easily switch between a male or female narrator! Just open `app.py`, find the line `REFERENCE_WAV = "reference.wav"` (around line 38), and change it to `"reference_female.wav"`.
 
 ## 📝 Requirements
 - Python 3.10+
