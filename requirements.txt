@@ -1,0 +1,11 @@
+# Audiobook Generator — Python dependencies
+# NOTE: torch and torchaudio are installed by setup.bat with the
+#       correct build for your GPU (CUDA or CPU-only). Do not pip
+#       install torch from this file directly.
+
+TTS>=0.22.0
+soundfile>=0.12.1
+numpy>=1.24.0
+tqdm>=4.65.0
+librosa>=0.10.0
+scipy>=1.11.0

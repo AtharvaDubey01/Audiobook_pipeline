@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+.DS_Store
+Chapters_Audio/*.wav
+*.pt
+*.zip
